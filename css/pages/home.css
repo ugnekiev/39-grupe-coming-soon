@@ -14,7 +14,11 @@
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
-body {
-   
+section.container.bg-main {
+   padding-bottom: 20px;
+}
+
+footer.container {
+    padding-top: 0px;
 }
 

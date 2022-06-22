@@ -9,3 +9,18 @@ body * {
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+/* custom properties; arba - variables */
+
+:root {
+    --main-color: #25b1ec;
+    --seconadry-color: #ea1e63;
+}
+
+.bg-main {
+    background-color: var(--main-color);
+}
+
+.bg-secondary {
+    background-color: var(--seconadry-color);
+}
