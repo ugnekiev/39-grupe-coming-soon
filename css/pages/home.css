@@ -93,6 +93,33 @@ footer.container {
     padding-top: 0px;
 }
 
+.socials {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    border-bottom: 2px solid #fff;
+}
+
+.socials > a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.socials > a:hover {
+    background-color: #fff;
+    color: var(--main-color);
+}
+
 @media(max-width: 700px) {
     .main-content {
         flex-direction: column;
