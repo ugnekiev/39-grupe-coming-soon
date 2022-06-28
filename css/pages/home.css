@@ -92,6 +92,7 @@
 footer.container {
     padding-top: 0px;
     text-align: center;
+    line-height: 1.6em;
 }
 
 .socials {
@@ -126,11 +127,33 @@ footer.container {
     gap: 30px;
     color: #fff8;
     justify-content: center;
+}
 
+.footer-logo {
+    height: 40px;
+    width: 100%;
+    object-fit: contain;
+    margin: 40px 0;
 }
 
 .credits > p {
+    position: relative;
+}
 
+.credits > p::after {
+    content: "";
+    height: 16px;
+    width: 2px;
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%)translateX(50%);
+}
+
+.credits > p:last-child::after {
+    display: none;
 }
 
 .credits > p > a {
@@ -138,6 +161,14 @@ footer.container {
 
 }
 
+.footer-description {
+    text-align: center;
+    color: #fff8;
+}
+
+.footer-description > a {
+    color: #fff8;
+}
 
 @media(max-width: 700px) {
     .main-content {
