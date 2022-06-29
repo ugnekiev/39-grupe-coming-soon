@@ -3,7 +3,6 @@
     width: 100%;
     flex-direction: column;
     gap: 15px;
-
 }
 
 .progress-bar > .top {
@@ -31,6 +30,24 @@
 .progress-bar > .bottom  > .bar {
     height: 100%;
     width: 90%;
-    background-color: var(--main-color);
+    background-color: transparent;
 }
 
+.progress-bar .bar > .loading {
+    height: 100%;
+    width: 100%;
+    background-color: var(--main-color);
+    animation-name: loading;
+    animation-duration: 3s;
+}
+
+@keyframes loading {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+
+}
